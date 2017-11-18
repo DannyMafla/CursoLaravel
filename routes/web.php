@@ -1,5 +1,7 @@
 <?php
 
+use App\products;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,10 +14,7 @@
 */
 
 Route::get('/', function () {
+	$products = products::all()->toArray();
+	dd($products);
     return view('index');
-});
-
-
-Route::get('/welcome', function () {
-    return view('welcome');
 });

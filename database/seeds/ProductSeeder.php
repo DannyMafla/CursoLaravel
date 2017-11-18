@@ -1,5 +1,6 @@
 <?php
 
+use App\products;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -14,9 +15,9 @@ class ProductSeeder extends Seeder
     public function run()
     {
         //
-        DB::table('products')->insert([
+        products::insert([
         	'code' => 'ABCD',
-        	'name' => 'TABLERO ABCD'
+        	'name' => 'TABLERO2 ABCD'
         ]);
     }
 }
