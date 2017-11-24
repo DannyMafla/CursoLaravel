@@ -17,7 +17,8 @@ class ProductSeeder extends Seeder
         //
         products::insert([
         	'code' => 'ABCD',
-        	'name' => 'TABLERO2 ABCD'
+        	'name' => 'TABLERO7 ABCD',
+        	'status' => 'A' 
         ]);
     }
 }
