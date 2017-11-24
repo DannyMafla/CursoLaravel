@@ -7,6 +7,22 @@
 
         <title>CursoLaravel</title>
 
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+		<link href="css/responsive.css" rel="stylesheet" type="text/css">
+		<link href="css/animate.css" rel="stylesheet" type="text/css">
+		<link href="css/estilos.css" rel="stylesheet" type="text/css">
+		<!--[if IE]><style type="text/css">.pie {behavior:url(PIE.htc);}</style><![endif]-->
+
+		<script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/jquery.isotope.js"></script>
+		<script type="text/javascript" src="js/wow.js"></script>
+		<script type="text/javascript" src="js/classie.js"></script>
+		<script type="text/javascript" src="funciones.js"></script>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
@@ -70,9 +86,7 @@
             	Tabla Productos!...
             </div>
         </center>>
-        <table>
-        <td>	
-        <h3>Productos Activos</h3>
+        <center><h3>Productos Activos</h3></center>
         @if (count($products)>0)
         <div class='container'>
 	        <table class='table'>
@@ -95,10 +109,8 @@
 	        </table>
     	</div>
        	@endif
-       </td>
-       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-       <td>
-       	<h3>Productos Inactivos Menores a 100</h3>
+       
+       	<center><h3>Productos Inactivos Menores a 100</h3></center>
        	@if (count($products1)>0)
         <div class='container'>
 	        <table class='table'>
@@ -121,10 +133,8 @@
 	        </table>
     	</div>
        	@endif
-       </td>
-       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-       <td>
-       	<h3>Productos Inactivos de Mayor a Menor</h3>
+  
+       	<center><h3>Productos Inactivos de Mayor a Menor</h3></center>
        	@if (count($products2)>0)
         <div class='container'>
 	        <table class='table'>
@@ -147,7 +157,6 @@
 	        </table>
     	</div>
        	@endif
-       </td>
-   </table>
+
     </body>
 </html>
