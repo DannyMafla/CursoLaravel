@@ -15,7 +15,7 @@ class ProductSeeder extends Seeder
     public function run()
     {
         //
-        products::insert([
+        Products::insert([
         	'code' => 'ABCD',
         	'name' => 'TABLERO7 ABCD',
         	'status' => 'A' 
